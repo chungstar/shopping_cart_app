@@ -1,4 +1,4 @@
-import { configureStore, combineReducers, applyMiddleware } from '@reduxjs/toolkit'
+import { createStore, combineReducers, applyMiddleware } from '@reduxjs/toolkit'
 import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
 
@@ -8,7 +8,7 @@ const initialState = {}
 
 const middleware = [thunk]
 
-const store = configureStore(
+const store = createStore(
     reducer,
     initialState,
     composeWithDevTools(applyMiddleware(...middleware))
