@@ -84,7 +84,7 @@ export const addProductToCart = (new_cart_item) => async (dispatch) =>{
             newCartProduct = new_cart_item
             dispatch({
                 type:CART_ITEM_ADD_SUCCESS,
-                payload: newCartProduct,
+                payload: newCartProduct
             })
         }
 
