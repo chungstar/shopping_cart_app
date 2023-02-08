@@ -5,6 +5,9 @@ import{
     CART_ITEM_ADD_REQUEST,
     CART_ITEM_ADD_SUCCESS,
     CART_ITEM_ADD_FAIL,
+    CART_ITEM_REMOVE_REQUEST,
+    CART_ITEM_REMOVE_SUCCESS,
+    CART_ITEM_REMOVE_FAIL,
 } from '../constants/cartConstants'
 
 export const listCartItemsReducer = (state = {cartItems:[]}, action)=>{
@@ -50,3 +53,4 @@ export const addItemToCartReducer = (state = {cartItem:[]}, action)=>{
             return state
     }
 }
+
