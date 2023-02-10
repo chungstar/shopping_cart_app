@@ -4,10 +4,7 @@ import{
     CART_LIST_FAIL,
     CART_ITEM_ADD_REQUEST,
     CART_ITEM_ADD_SUCCESS,
-    CART_ITEM_ADD_FAIL,
-    CART_ITEM_REMOVE_REQUEST,
-    CART_ITEM_REMOVE_SUCCESS,
-    CART_ITEM_REMOVE_FAIL,
+    CART_ITEM_ADD_FAIL
 } from '../constants/cartConstants'
 
 export const listCartItemsReducer = (state = {cartItems:[]}, action)=>{
@@ -32,17 +29,18 @@ export const listCartItemsReducer = (state = {cartItems:[]}, action)=>{
     }
 }
 
-export const addItemToCartReducer = (state = {cartItem:[]}, action)=>{
+export const addItemToCartReducer = (state = {newCartItem:{},cartItems:[]}, action)=>{
     switch(action.type){
         case CART_ITEM_ADD_REQUEST:
             return{
                 ...state,
-                cartItem:[...state.cartItem, action.payload],
+                cartItems:[...state.cartItems, action.payload],
             }
         case CART_ITEM_ADD_SUCCESS:
             return{
                 loading:false,
                 newCartItem:action.payload,
+                cartItems: []
             }
         case CART_ITEM_ADD_FAIL:
             return{

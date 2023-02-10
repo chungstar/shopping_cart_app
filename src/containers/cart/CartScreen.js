@@ -1,8 +1,9 @@
 import React from 'react'
 import CartItem from '../../components/cart/CartItem'
-import {CartContainerStyle, PageHeading} from '../../styles/CartScreen'
+import { CartContainerStyle, PageHeading } from '../../styles/CartScreen'
 import { useDispatch, useSelector } from 'react-redux'
 import { listCartItems } from '../../actions/cartActions'
+
 // const cartItems = [
 //   {
 //     title:'Amazing Shirt',
@@ -26,6 +27,12 @@ const CartScreen = () => {
 
   return (
     <div>
+      { loading ? (
+        <div>Loading</div>
+      ): error ? (
+        <div>{error}</div>
+      ):(
+        <>
         <PageHeading>Cart</PageHeading>
         <CartContainerStyle>
           {/* map through our cart items, display cartItem component for each one */}
@@ -33,6 +40,8 @@ const CartScreen = () => {
             <CartItem item={item} />
           ))}
         </CartContainerStyle>
+        </>  
+      )} 
     </div>
   )
 }
