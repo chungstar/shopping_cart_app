@@ -9,4 +9,4 @@ Build A Full Stack Shopping Cart App Using React, Redux & Firebase
 
 ## 기술 스택 
 ***
-<img src="https://img.shields.io/badge/Firebase-#FFCA28?style=for-the-badge&logo=Firebase&logoColor=white">
+<img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=Firebase&logoColor=white">
