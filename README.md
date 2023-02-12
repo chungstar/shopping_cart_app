@@ -4,5 +4,9 @@ Build A Full Stack Shopping Cart App Using React, Redux & Firebase
 의 클론 코딩  
 
 
-클론 코딩을 통해서 리덕스 미들웨어에 대해서 이해하는 데 도움이 많이 되었다
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white">
+클론 코딩을 통해서 리덕스 미들웨어에 대해서 이해하는 데 도움이 많이 되었다  
+
+
+## 기술 스택 
+***
+<img src="https://img.shields.io/badge/Firebase-#FFCA28?style=for-the-badge&logo=Firebase&logoColor=white">
