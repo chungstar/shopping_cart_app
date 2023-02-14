@@ -32,6 +32,7 @@ export const listCartItems = () => async (dispatch)=>{
     const cartCol = collection(db,'cartItems')
     const cartSnapshot = await getDocs(cartCol)
     const cartList = cartSnapshot.docs.map((doc)=>doc.data())
+    console.log(cartList)
     return cartList
   }
 
