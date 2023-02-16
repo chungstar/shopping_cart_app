@@ -9,7 +9,7 @@ React와 Redux,middleware를 공부하고 프로젝트에 적용시키기 위한
 ## 배운것들
 Redux, middleware 작동 방식, 적용방법  
 react에 대한 복습  
-firebase
+firebase 세팅, 사용방법  
 
 ## 해당 영상
 [![미리보기](https://img.youtube.com/vi/_zWOpsv4jW4/0.jpg)](https://www.youtube.com/watch?v=_zWOpsv4jW4)  
